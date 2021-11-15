@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:scrollbarTrackHorizontal="@drawable/fondo"
+    android:scrollbarTrackVertical="@drawable/fondo"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="281dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="ingreso"
+        android:text="Iniciar Sesion"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_menu_slideshow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="281dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="#03A9F4"
+        android:onClick="registro"
+        android:text="Registrarse"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="281dp"
+        android:layout_height="250dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        android:background="?android:attr/colorPressedHighlight"
+        android:backgroundTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="112dp"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="src_atop"
+            android:text="Contraseña"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="193dp" />
+
+        <EditText
+            android:id="@+id/editTextDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTintMode="src_atop"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <TextView
+            android:id="@+id/txtDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="src_atop"
+            android:text="Usuario/Cedula"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="193dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="140dp"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
