@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_administrador.xml" value="0.25" />
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_administrator.xml" value="0.22439024390243903" />
         <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main3.xml" value="0.25" />
@@ -12,6 +14,13 @@
         <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main7.xml" value="0.33" />
         <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main8.xml" value="0.25" />
         <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main9.xml" value="0.25" />
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main_admin_parking.xml" value="0.21" />
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main_cargo.xml" value="0.18" />
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main_empleado.xml" value="0.25" />
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main_planes.xml" value="0.26875" />
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/activity_main_zona.xml" value="0.25" />
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/layout/itemlistaadmin.xml" value="0.26856884057971014" />
+        <entry key="..\:/Users/JOSE ALBERTO/OneDrive - UNAB/Documentos/ciclo 4/proyecto parqueadero/TuParqueo/app/src/main/res/menu/actionpark.xml" value="0.2" />
       </map>
     </option>
   </component>

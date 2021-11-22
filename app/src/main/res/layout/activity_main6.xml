@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.515">
 
         <EditText
-            android:id="@+id/editTextTarHora"
+            android:id="@+id/edtxHora"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -86,7 +86,7 @@
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/editTextTarDia"
+            android:id="@+id/edtxDia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -95,7 +95,7 @@
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/editTextTarSemana"
+            android:id="@+id/edtxSemana"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -103,7 +103,7 @@
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/editTextTarMes"
+            android:id="@+id/edtxMes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

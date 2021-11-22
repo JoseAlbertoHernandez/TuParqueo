@@ -15,7 +15,7 @@ public class MainActivity7 extends AppCompatActivity {
     }
     public void administrador (View view) {
 
-        Intent admin = new Intent(this,MainActivity8.class);
+        Intent admin = new Intent(this, MainActivityAdministrator.class);
         startActivity(admin);
     }
     public void operador (View view) {

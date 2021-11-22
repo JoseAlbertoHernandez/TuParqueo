@@ -10,10 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TuParqueo">
         <activity
+            android:name=".MainActivityZona"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityPlanes"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityEmpleado"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityParqueadero"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity9"
             android:exported="false" />
         <activity
-            android:name=".MainActivity8"
+            android:name=".MainActivityAdministrator"
             android:exported="false" />
         <activity
             android:name=".MainActivity7"

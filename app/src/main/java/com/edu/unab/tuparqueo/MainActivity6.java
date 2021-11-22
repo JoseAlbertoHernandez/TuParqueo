@@ -16,13 +16,13 @@ public class MainActivity6 extends AppCompatActivity {
 
     public void guardarPlan (View view) {
 
-        Intent guardarPlan = new Intent(this,MainActivity8.class);
+        Intent guardarPlan = new Intent(this, MainActivityAdministrator.class);
         startActivity(guardarPlan);
     }
 
     public void cancelPlan (View view) {
 
-        Intent cancelPlan = new Intent(this,MainActivity8.class);
+        Intent cancelPlan = new Intent(this, MainActivityAdministrator.class);
         startActivity(cancelPlan);
     }
 }
