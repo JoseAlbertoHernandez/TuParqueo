@@ -1,19 +1,17 @@
-package modelo;
-
-import androidx.annotation.NonNull;
+package com.edu.unab.tuparqueo.modelo;
 
 public class Empleado {
-    private int cedula;
+    private String cedEmpleado;
     private String nomEmpleado;
     private String apeEmpleado;
     private String cargo;
     private String dirEmpleado;
-    private int telEmpleado;
+    private String telEmpleado;
     private String correoEmpleado;
 
-    public Empleado(int cedula, String nomEmpleado, String apeEmpleado, String cargo,
-                    String dirEmpleado, int telEmpleado, String correoEmpleado) {
-        this.cedula = cedula;
+    public Empleado(String cedEmpleado, String nomEmpleado, String apeEmpleado, String cargo,
+                    String dirEmpleado, String telEmpleado, String correoEmpleado) {
+        this.cedEmpleado= cedEmpleado;
         this.nomEmpleado = nomEmpleado;
         this.apeEmpleado = apeEmpleado;
         this.cargo = cargo;
@@ -22,12 +20,12 @@ public class Empleado {
         this.correoEmpleado = correoEmpleado;
     }
 
-    public int getCedula() {
-        return cedula;
+    public String getCedEmpleado() {
+        return cedEmpleado;
     }
 
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
+    public void setCedEmpleado(String cedEmpleado) {
+        this.cedEmpleado = cedEmpleado;
     }
 
     public String getNomEmpleado() {
@@ -62,11 +60,11 @@ public class Empleado {
         this.dirEmpleado = dirEmpleado;
     }
 
-    public int getTelEmpleado() {
+    public String getTelEmpleado() {
         return telEmpleado;
     }
 
-    public void setTelEmpleado(int telEmpleado) {
+    public void setTelEmpleado(String telEmpleado) {
         this.telEmpleado = telEmpleado;
     }
 
@@ -78,8 +76,5 @@ public class Empleado {
         this.correoEmpleado = correoEmpleado;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }

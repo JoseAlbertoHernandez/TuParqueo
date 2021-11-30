@@ -90,7 +90,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnGuardar"
+        android:id="@+id/btnRegPlan"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginBottom="76dp"
@@ -104,7 +104,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnCancelar"
+        android:id="@+id/btnConsulEmp"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginBottom="76dp"

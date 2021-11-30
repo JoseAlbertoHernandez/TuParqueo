@@ -79,7 +79,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnCancelar"
+        android:id="@+id/btnConsulEmp"
         android:layout_width="330dp"
         android:layout_height="53dp"
         android:onClick="cancelar"

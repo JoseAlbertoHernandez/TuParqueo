@@ -45,166 +45,200 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintVertical_bias="0.194" />
 
-    <Button
-        android:id="@+id/btnCancelar"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="cancelar"
-        android:text="@string/btnCancelar"
-        android:textColor="#81D4FA"
-        app:cornerRadius="25dp"
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="321dp"
+        android:layout_height="377dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UsingOnClickInXml" />
+        app:layout_constraintTop_toBottomOf="@+id/frameEncabezado"
+        app:layout_constraintVertical_bias="0.24000001">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCedula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/txtCedula" />
+
+            <EditText
+                android:id="@+id/edtxCedEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="."
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/txtNombre" />
+
+            <EditText
+                android:id="@+id/edtxNomEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="-"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/txtApellido" />
+
+            <EditText
+                android:id="@+id/edtxApeEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="-"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtCargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/txtCargo" />
+
+            <EditText
+                android:id="@+id/edtxCargo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="-"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/txtDireccion" />
+
+            <EditText
+                android:id="@+id/edtxDirEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="-"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/txtTelefono" />
+
+            <EditText
+                android:id="@+id/edtxTelEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="-"
+                android:inputType="phone"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/txtCorreo" />
+
+            <EditText
+                android:id="@+id/edtxCorreoEmpleado"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="-"
+                android:inputType="textEmailAddress"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
-        android:id="@+id/btnGuardar"
+        android:id="@+id/btnRegEmp"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="registrar"
+        android:layout_marginBottom="68dp"
         android:text="@string/btnGuardar"
         android:textColor="#81D4FA"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-        android:layout_width="302dp"
-        android:layout_height="454dp"
-        android:orientation="vertical"
+    <Button
+        android:id="@+id/btnConsulEmp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/btnConsultar"
+        android:textColor="#81D4FA"
+        app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameEncabezado"
-        app:layout_constraintVertical_bias="0.319">
+        tools:ignore="UsingOnClickInXml" />
 
-        <TextView
-            android:id="@+id/txtCedula"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:text="@string/txtCedula" />
+    <Button
+        android:id="@+id/btnEditEmp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnEditar"
+        android:textColor="#81D4FA"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextNumber"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="."
-            android:inputType="number"
-            tools:ignore="TouchTargetSizeCheck" />
+    <Button
+        android:id="@+id/btnElimEmp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnConsultar"
+        android:textColor="#81D4FA"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
 
-        <TextView
-            android:id="@+id/txtNombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:text="@string/txtNombre" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="-"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:text="@string/txtApellido" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="-"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/txtCargo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:text="@string/txtCargo" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="-"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/txtDireccion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:text="@string/txtDireccion" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="-"
-            android:inputType="textPersonName"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/txtTelefono"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:text="@string/txtTelefono" />
-
-        <EditText
-            android:id="@+id/editTextPhone"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="-"
-            android:inputType="phone"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/txtCorreo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:text="@string/txtCorreo" />
-
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="-"
-            android:inputType="textEmailAddress"
-            tools:ignore="TouchTargetSizeCheck" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

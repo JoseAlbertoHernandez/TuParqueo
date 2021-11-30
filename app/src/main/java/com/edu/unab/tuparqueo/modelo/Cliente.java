@@ -1,18 +1,16 @@
-package modelo;
-
-import androidx.annotation.NonNull;
+package com.edu.unab.tuparqueo.modelo;
 
 public class Cliente {
-    private int cedula;
+    private String cedCliente;
     private String nomCliente;
     private String apeCliente;
     private String dirCliente;
-    private int telCliente;
+    private String telCliente;
     private String correoCliente;
 
-    public Cliente(int cedula, String nomCliente, String apeCliente, String dirCliente,
-                   int telCliente, String correoCliente) {
-        this.cedula = cedula;
+    public Cliente(String cedCliente, String nomCliente, String apeCliente, String dirCliente,
+                   String telCliente, String correoCliente) {
+        this.cedCliente = cedCliente;
         this.nomCliente = nomCliente;
         this.apeCliente = apeCliente;
         this.dirCliente = dirCliente;
@@ -20,12 +18,12 @@ public class Cliente {
         this.correoCliente = correoCliente;
     }
 
-    public int getCedula() {
-        return cedula;
+    public String getCedCliente() {
+        return cedCliente;
     }
 
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
+    public void setCedCliente(String cedula) {
+        this.cedCliente = cedula;
     }
 
     public String getNomCliente() {
@@ -52,11 +50,11 @@ public class Cliente {
         this.dirCliente = dirCliente;
     }
 
-    public int getTelCliente() {
+    public String getTelCliente() {
         return telCliente;
     }
 
-    public void setTelCliente(int telCliente) {
+    public void setTelCliente(String telCliente) {
         this.telCliente = telCliente;
     }
 
@@ -68,8 +66,5 @@ public class Cliente {
         this.correoCliente = correoCliente;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }

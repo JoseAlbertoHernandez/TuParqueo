@@ -1,6 +1,4 @@
-package modelo;
-
-import androidx.annotation.NonNull;
+package com.edu.unab.tuparqueo.modelo;
 
 public class TipoVehiculo {
     private String tVehiculo;
@@ -17,8 +15,5 @@ public class TipoVehiculo {
         this.tVehiculo = tVehiculo;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }

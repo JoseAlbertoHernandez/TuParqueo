@@ -1,6 +1,4 @@
-package modelo;
-
-import androidx.annotation.NonNull;
+package com.edu.unab.tuparqueo.modelo;
 
 public class Pago {
     private String formaPago;
@@ -27,8 +25,5 @@ public class Pago {
         this.estado = estado;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }

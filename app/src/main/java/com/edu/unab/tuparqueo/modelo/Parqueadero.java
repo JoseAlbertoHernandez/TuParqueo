@@ -1,21 +1,27 @@
-package modelo;
-
-import androidx.annotation.NonNull;
+package com.edu.unab.tuparqueo.modelo;
 
 public class Parqueadero {
-    private String razonSocial;
     private String nit;
+    private String razonSocial;
     private String direccionParqueadero;
-    private int telParqueadero;
+    private String telParqueadero;
     private String correoParqueadero;
 
-    public Parqueadero(String razonSocial, String nit, String direccionParqueadero,
-                       int telParqueadero, String correoParqueadero){
-        this.razonSocial = razonSocial;
+    public Parqueadero(String nit, String razonSocial, String direccionParqueadero,
+                       String telParqueadero, String correoParqueadero){
         this.nit = nit;
+        this.razonSocial = razonSocial;
         this.direccionParqueadero = direccionParqueadero;
         this.telParqueadero = telParqueadero;
         this.correoParqueadero = correoParqueadero;
+    }
+
+    public String getNit() {
+        return nit;
+    }
+
+    public void setNit(String nit) {
+        this.nit = nit;
     }
 
     public String getRazonSocial() {
@@ -34,19 +40,11 @@ public class Parqueadero {
         this.direccionParqueadero = direccionParqueadero;
     }
 
-    public String getNit() {
-        return nit;
-    }
-
-    public void setNit(String nit) {
-        this.nit = nit;
-    }
-
-    public int getTelParqueadero() {
+    public String getTelParqueadero() {
         return telParqueadero;
     }
 
-    public void setTelParqueadero(int telParqueadero) {
+    public void setTelParqueadero(String telParqueadero) {
         this.telParqueadero = telParqueadero;
     }
 
@@ -58,8 +56,5 @@ public class Parqueadero {
         this.correoParqueadero = correoParqueadero;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }

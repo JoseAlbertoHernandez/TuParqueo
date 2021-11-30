@@ -7,7 +7,7 @@
     <string name="btnZona">zona</string>
     <string name="btnSalir">salir</string>
     <string name="btnEstado">Estado zona</string>
-    <string name="btnGuardar">aceptar</string>
+    <string name="btnGuardar">Registrar</string>
     <string name="btnCancelar">cancelar</string>
     <string name="txtRegEmpleado">REGISTRO EMPLEADO</string>
     <string name="txtCedula">N° IDENTIFICACION</string>
@@ -24,7 +24,9 @@
     <string name="txtZona">ZONAS</string>
     <string name="txtNomZona">NOMBRE ZONA</string>
     <string name="txtBahia">CANTIDAD BAHIAS</string>
-
+    <string name="btnConsultar">Consultar</string>
+    <string name="btnEliminar">Eliminar</string>
+    <string name="btnEditar">Editar</string>
 
 
 </resources>

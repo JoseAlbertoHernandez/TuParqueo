@@ -53,10 +53,28 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/frameEncabezado"
-        app:layout_constraintVertical_bias="0.563">
+        app:layout_constraintTop_toBottomOf="@+id/frameEncabezado"
+        app:layout_constraintVertical_bias="0.369">
+
+        <TextView
+            android:id="@+id/txtIdentificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:text="Nit"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtxNit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="-"
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/txtParqueadero"
@@ -74,25 +92,6 @@
             android:background="@color/white"
             android:ems="10"
             android:hint="."
-            android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/txtIdentificacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/holo_green_light"
-            android:backgroundTint="@android:color/holo_green_light"
-            android:text="@string/txtCedula"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/edtxIdentificacion"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="-"
             android:inputType="textPersonName" />
 
         <TextView
@@ -153,31 +152,57 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnGuardar"
+        android:id="@+id/btnRegParque"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="80dp"
-        android:onClick="guardar"
+        android:layout_marginBottom="68dp"
         android:text="@string/btnGuardar"
         android:textColor="#81D4FA"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnCancelar"
+        android:id="@+id/btnConsulParque"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="80dp"
-        android:onClick="cancelar"
-        android:text="@string/btnCancelar"
+        android:layout_marginBottom="68dp"
+        android:text="@string/btnConsultar"
         android:textColor="#81D4FA"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btnEditParque"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnEditar"
+        android:textColor="#81D4FA"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnElimParque"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnEliminar"
+        android:textColor="#81D4FA"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
