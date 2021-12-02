@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void continuar(View view) {
 
-        Intent continua= new Intent(this, MainActivity2.class);
+        Intent continua= new Intent(this, MainActivityInicio.class);
         startActivity(continua);
     }
 

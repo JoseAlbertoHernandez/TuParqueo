@@ -20,7 +20,7 @@ public class MainActivity7 extends AppCompatActivity {
     }
     public void operador (View view) {
 
-        Intent operar = new Intent(this, MainActivity4.class);
+        Intent operar = new Intent(this, MainActivityRegistro.class);
         startActivity(operar);
     }
     public void usuario (View view) {
@@ -30,7 +30,7 @@ public class MainActivity7 extends AppCompatActivity {
     }
     public void salir (View view) {
 
-        Intent salida = new Intent(this, MainActivity2.class);
+        Intent salida = new Intent(this, MainActivityInicio.class);
         startActivity(salida);
     }
 }

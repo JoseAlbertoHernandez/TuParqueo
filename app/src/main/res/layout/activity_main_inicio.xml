@@ -4,48 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
+    android:background="@android:color/holo_blue_light"
     android:scrollbarTrackHorizontal="@drawable/fondo"
     android:scrollbarTrackVertical="@drawable/fondo"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivityInicio">
 
-    <Button
-        android:id="@+id/btnIngresar"
-        android:layout_width="281dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="40dp"
-
-        android:background="@android:color/holo_orange_dark"
-        android:onClick="ingreso"
-        android:text="Iniciar Sesion"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:icon="@android:drawable/ic_menu_slideshow"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <FrameLayout
+        android:id="@+id/frameEncabezado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/colorPressedHighlight"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="281dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="40dp"
-        android:background="#03A9F4"
-        android:onClick="registro"
-        android:text="Registrarse"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:icon="@android:drawable/ic_menu_edit"
-        app:iconPadding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.871" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="231dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/tuparqueologo" />
+    </FrameLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -78,14 +61,15 @@
             tools:layout_editor_absoluteY="193dp" />
 
         <EditText
-            android:id="@+id/editTextDocumento"
+            android:id="@+id/edtxEmail"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="50dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
             android:backgroundTintMode="src_atop"
             android:ems="10"
-            android:inputType="number"
+            android:inputType="textEmailAddress"
             tools:layout_editor_absoluteX="98dp"
             tools:layout_editor_absoluteY="212dp" />
 
@@ -97,21 +81,60 @@
             android:layout_marginTop="25dp"
             android:backgroundTint="@color/black"
             android:backgroundTintMode="src_atop"
-            android:text="Usuario/Cedula"
+            android:text="Correo Electronico"
             android:textColor="@color/black"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="98dp"
             tools:layout_editor_absoluteY="193dp" />
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/edtxContraseña"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="140dp"
-            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:drawableLeft="@android:drawable/ic_lock_lock"
             android:ems="10"
             android:inputType="textPassword" />
     </FrameLayout>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="281dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+
+        android:background="@android:color/holo_orange_dark"
+        android:text="Iniciar Sesion"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="25dp"
+        app:icon="@android:drawable/ic_menu_slideshow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="281dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="#03A9F4"
+        android:text="Registrarse"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="25dp"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

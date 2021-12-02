@@ -27,6 +27,8 @@
     <string name="btnConsultar">Consultar</string>
     <string name="btnEliminar">Eliminar</string>
     <string name="btnEditar">Editar</string>
+    <string name="txtContrasena">CONTRASEÑA</string>
+
 
 
 </resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".MainActivityCliente">
+
+    <FrameLayout
+        android:id="@+id/frameEncabezado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/colorPressedHighlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="231dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/tuparqueologo" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="333dp"
+        android:alpha="@dimen/material_emphasis_high_type"
+        android:background="?android:attr/colorPressedHighlight"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416">
+
+        <EditText
+            android:id="@+id/edtxCedCliente"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/txtCedula"
+            android:inputType="number"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/edtxNomCliente"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/txtNombre"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/edtxApeCliente"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/txtApellido"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/edtxCorreoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/txtCorreo"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/edtxContraCliente"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/txtContrasena"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCancelCliente"
+        android:layout_width="317dp"
+        android:layout_height="66dp"
+        android:text="@string/btnCancelar"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <Button
+        android:id="@+id/btnRegCliente"
+        android:layout_width="318dp"
+        android:layout_height="62dp"
+        android:text="@string/btnGuardar"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

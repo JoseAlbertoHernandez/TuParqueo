@@ -10,26 +10,25 @@
 
     <FrameLayout
         android:id="@+id/frameEncabezado"
-        android:layout_width="412dp"
-        android:layout_height="136dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="139dp"
         android:background="?android:attr/colorPressedHighlight"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="231dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
             android:layout_margin="15dp"
             app:srcCompat="@drawable/tuparqueologo" />
     </FrameLayout>
+
 
     <TextView
         android:id="@+id/txtRegEmpleado"
@@ -45,13 +44,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194" />
-
+        app:layout_constraintVertical_bias="0.172" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="321dp"
-        android:layout_height="377dp"
+        android:layout_width="330dp"
+        android:layout_height="415dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
